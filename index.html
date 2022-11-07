@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Financiamneto</title>
+
+    <!--Link Css-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h2>Simulador de Financiamento com Sistema de Amortização Constante (SAC)</h2>
+    <!--Ínicio input-->
+    <input type="text" id="textoValor" placeholder="Valor do bem"><br>
+    <input type="text" id="textoEntrada" placeholder="Valor da Entrada"><br>
+    <input type="text" id="textoTaxaJuros" placeholder="Taxa de Juros (%)"><br>
+    <input type="text" id="textoPrazo" placeholder="Prazo (em meses)"><br>
+    <button id="botaoCalcular">Calcular</button>
+    <input type="checkbox" id="comCarencia">Com carência?
+    <!--Final input-->
+    <select name="" id="listaSuspensa" hidden>
+        <option value="2">2 meses</option>
+        <option value="3">3 meses</option>
+        <option value="4">4 meses</option>
+    </select>
+    <p></p>
+    <table><!--Ínicio tabela-->
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Valor da Parcela</th>
+                <th>Amortização</th>
+                <th>Juros</th>
+                <th>Saldo Devedor</th>
+            </tr>
+        </thead>
+        <tbody id="corpoTabela">
+
+        </tbody>
+    </table><!--Final tabela-->
+    
+    <div id="footer"><!--Direitos reservados-->
+        <p>&copy; by Humberto Luciano - 2022</p>
+    </div>
+
+    <!--Link Js-->
+    <script type="module" src="script.js"></script>
+</body>
+</html>

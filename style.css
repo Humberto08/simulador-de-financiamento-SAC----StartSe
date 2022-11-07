@@ -1,0 +1,16 @@
+body {
+    background: gray;
+    color: black;
+    font: 11pt Tahoma;
+}
+
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 15px;
+}
+
+#footer {
+    position: absolute;
+    padding: 0;
+}
